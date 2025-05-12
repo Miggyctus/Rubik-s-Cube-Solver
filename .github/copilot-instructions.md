@@ -2,7 +2,7 @@
 - Project name: Rubik's cube solver
 - Unity version: Unity 2022.3.4f1
 - Active game object:
-  - Name: Quad
+  - Name: Cube
   - Tag: Untagged
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

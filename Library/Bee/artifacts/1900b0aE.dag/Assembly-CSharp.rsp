@@ -353,6 +353,7 @@
 -analyzer:"C:/Program Files/Unity 2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2022.3.4f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/automate.cs"
+"Assets/camControl.cs"
 "Assets/cubeMap.cs"
 "Assets/cubeState.cs"
 "Assets/Kociemba/K_CoordCube.cs"

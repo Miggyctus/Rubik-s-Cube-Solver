@@ -13,7 +13,6 @@ public class rotateCube : MonoBehaviour
     Vector3 mouseDelta;
 
     public GameObject Target;
-
     float speed = 200f;
     // Start is called before the first frame update
     void Start()
@@ -57,30 +56,30 @@ public class rotateCube : MonoBehaviour
             secondPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
             currentSwipe.Normalize();
-            if(leftSwipe(currentSwipe))
+            if (leftSwipe(currentSwipe))
             {
                 Target.transform.Rotate(0, 90, 0, Space.World);
-            }    
-            else if(rightSwipe(currentSwipe))
+            }
+            else if (rightSwipe(currentSwipe))
             {
                 Target.transform.Rotate(0, -90, 0, Space.World);
             }
-            else if(upLeftSwipe(currentSwipe))
+            else if (upLeftSwipe(currentSwipe))
             {
-                Target.transform.Rotate(90, 0, 0 , Space.World);
+                Target.transform.Rotate(90, 0, 0, Space.World);
             }
-            else if(upRightSwipe(currentSwipe))
+            else if (downRightSwipe(currentSwipe))
+            {
+                Target.transform.Rotate(-90, 0, 0, Space.World);
+            }
+            else if (upRightSwipe(currentSwipe))
             {
                 Target.transform.Rotate(0, 0, -90, Space.World);
             }
-            else if(downLeftSwipe(currentSwipe))
+            else if (downLeftSwipe(currentSwipe))
             {
                 Target.transform.Rotate(0, 0, 90, Space.World);
             }
-            else if(downRightSwipe(currentSwipe))
-            {
-                Target.transform.Rotate(-90, 0, 0, Space.World);
-            }    
         }
     }
     bool leftSwipe(Vector2 swipe)
@@ -107,4 +106,5 @@ public class rotateCube : MonoBehaviour
     {
         return swipe.y < 0 && swipe.x > 0f;
     }
+
 }

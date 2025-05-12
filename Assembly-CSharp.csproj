@@ -73,10 +73,11 @@
     <Compile Include="Assets\Kociemba\K_CoordCubeBuildTables.cs" />
     <Compile Include="Assets\Kociemba\K_SearchRunTime.cs" />
     <Compile Include="Assets\Kociemba\K_Tools.cs" />
+    <Compile Include="Assets\camControl.cs" />
     <Compile Include="Assets\selectFace.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Prefabs\NewUnlitShader.shader" />
+    <None Include="Assets\Prefabs\Colorful.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
